@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Ucanbe::Application.config.secret_key_base = '5f19a410078596c50ab7c6e8bebe665ef9b3371c064fef00b3ff696545446e71a702ebd5e29de23ca9f0d1934e3d0a6e069c5511dab9fdb133fb76c71b97ed8e'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+Ucanbe::Application.config.secret_key_base = secure_token

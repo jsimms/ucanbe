@@ -1,4 +1,5 @@
 Ucanbe::Application.routes.draw do
+  get "mailchimp/subscribe"
   get "static_pages/landing"
   get "static_pages/home"
   get "static_pages/how"

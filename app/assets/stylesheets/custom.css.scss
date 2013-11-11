@@ -1,1 +1,41 @@
 @import "bootstrap";
+
+/* general */
+#ucanbe {
+  text-align: center; 
+}
+
+#logo {
+  margin: 75px 0; 
+}
+
+.container {
+  margin-top: 50px; 
+  margin-bottom: 50px;
+}
+
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid gray;
+  color: gray;
+  a {
+    color: gray;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}

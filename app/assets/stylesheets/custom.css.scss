@@ -6,16 +6,17 @@
 }
 
 #logo {
-  margin: 75px 0; 
+  margin: 75px 0 100px 0; 
 }
 
 .container {
-  margin-top: 50px; 
-  margin-bottom: 50px;
+  margin: 75px auto; 
 }
 
 /* footer */
 footer {
+  width: 90%;
+  margin: 45px auto 10px auto;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid gray;

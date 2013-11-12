@@ -1,10 +1,13 @@
 Ucanbe::Application.routes.draw do
+  root :to => "static_pages#landing"
+
   get "mailchimp/subscribe"
   get "static_pages/landing"
   get "static_pages/home"
   get "static_pages/how"
   get "static_pages/contact"
   mount Split::Dashboard, :at => 'split'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

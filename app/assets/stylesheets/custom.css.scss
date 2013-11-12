@@ -1,16 +1,25 @@
 @import "bootstrap";
 
-/* general */
+/* custom */
 #ucanbe {
   text-align: center; 
 }
 
 #logo {
-  margin: 75px 0 100px 0; 
+  margin: 40px 0 75px 0; 
 }
 
 .container {
-  margin: 75px auto; 
+  margin: 50px auto; 
+}
+
+.typer {
+  font-weight: bold;
+  span {
+  font-style: italic;
+  color: gray;
+  text-decoration: underline;
+  }
 }
 
 /* footer */

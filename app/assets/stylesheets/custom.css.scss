@@ -1,12 +1,46 @@
 @import "bootstrap";
 
-/* custom */
+/* bs overrides */ 
+h1, h2, h3, h4, h5, h6 {
+  color: #4D3A84;
+}
+
+p {
+  color: gray;
+}
+
+label {
+  color: gray;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #4D3A84;
+  border-color: #36295C; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: white;
+    background-color: #3E2E6A;
+    border-color: #1F1735; }
+  .open .btn-primary.dropdown-toggle {
+    color: white;
+    background-color: #3276b1;
+    border-color: #285e8e; }
+  .btn-primary:active, .btn-primary.active {
+    background-image: none; }
+  .open .btn-primary.dropdown-toggle {
+    background-image: none; }
+  .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd; }
+
+
+/* custom ids and classes */
 #ucanbe {
   text-align: center; 
 }
 
 #logo {
-  margin: 40px 0 75px 0; 
+  margin: 20px 0 30px 0; 
 }
 
 .container {
@@ -17,8 +51,7 @@
   font-size: 2em;
   span {
   font-style: italic;
-  color: gray;
-  text-decoration: underline;
+  color: #93C01F;
   }
 
 }

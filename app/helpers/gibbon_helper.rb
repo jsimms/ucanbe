@@ -1,0 +1,2 @@
+module GibbonHelper
+end

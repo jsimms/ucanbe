@@ -1,0 +1,4 @@
+<%= form_tag subscribe_path, class: "form", remote: true do %>
+    <%= text_field_tag :email, nil, :class => 'email', :type=>"email", :placeholder => 'Sign up for newsletter' %>
+    <%= submit_tag "Go", class: "submit-button"%>
+<% end %>

@@ -34,14 +34,27 @@
   --> 
 
   <head>
-    <title>Ucanbe</title>
+    <!--Metas and OG -->     
+    <title>Spark Genius | UCanBe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UCanBe lets parents order monthly science and technology activity packages for their child to help inspire their unique genius.">
+    <meta name="keywords" content="STEM, education, science, technology, engineering, math, learning, littlebits, robotics, experiments, after school, activities, programming" />
+
+    <meta property="og:type"    content="website"/>
+    <meta property="fb:page_id"   content="664572716907516" />
+    <meta property="og:site_name"   content="UCanBe" />
+    <meta property="og:url"     content="http://www.ucanbe.com" />
+    <meta property="og:title"     content="Spark Genius | UCanBe" />    
+    <meta property="og:image"     content="https://s3.amazonaws.com/ucanbe-production/images/ucanbe-logo%402x.png" />
+    <meta property="og:description" content="UCanBe lets parents order monthly science and technology activity packages for their child to help inspire their unique genius." />
+
+    <%= csrf_meta_tags %>
+
     <!--CSS and shim-->
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= render 'layouts/shim' %>
 
-    <!--Metas and OG --> 
-    <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--GA --> 
     <script>

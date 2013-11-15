@@ -1,9 +1,25 @@
+/* Imports, mixins, variables */ 
+
 @import "bootstrap";
+
+$lightgray: #ccc; 
+$ucanbe-purple: #4D3A84;
+$ucanbe-green: #93C01F;
+$ucanbe-orange: #EF9100; 
 
 /* bs overrides */ 
 h1, h2, h3, h4, h5, h6 {
-  color: #4D3A84;
+  color: $ucanbe-purple;
 }
+
+a {
+  color: $ucanbe-green;
+}
+
+a:hover {
+  color: #84AD1C; 
+}
+
 
 p {
   color: gray;
@@ -15,7 +31,7 @@ label {
 
 .btn-primary {
   color: white;
-  background-color: #4D3A84;
+  background-color: $ucanbe-purple;
   border-color: #36295C; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     color: white;
@@ -46,17 +62,18 @@ label {
 
 #response {
   font-weight: bold; 
+  font-style: italic;
 }
 
 .container {
-  margin: 50px auto; 
+  margin: 30px auto; 
 }
 
 .typer {
-  font-size: 2em;
+  font-size: 1.5em;
   span {
   font-style: italic;
-  color: #93C01F;
+  color: $ucanbe-green;
   }
 }
 
@@ -64,32 +81,9 @@ label {
   margin-top: 40px;
 }
 
-
-
-/* footer */
-footer {
-  width: 90%;
-  margin: 45px auto 10px auto;
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid gray;
-  color: gray;
-  a {
-    color: gray;
-    &:hover {
-      color: black;
-      text-decoration: none;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
+.footer {
+  border-top: 1px solid $lightgray;
+  font-size: .75em;
+  margin-top: 25px;
+  padding: 25px 0;
 }

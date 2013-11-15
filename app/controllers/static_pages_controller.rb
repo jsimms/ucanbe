@@ -2,12 +2,12 @@ class StaticPagesController < ApplicationController
   def landing
   end
 
-  def home
-  end
-
-  def how
+  def about
   end
 
   def contact
   end
+
+  def sparkbox_littlebits
+  end 
 end

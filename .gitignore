@@ -19,5 +19,6 @@ doc/
 .idea
 .secret
 
-#Ignore images 
+# Ignore images 
 /app/assets/images/*
+

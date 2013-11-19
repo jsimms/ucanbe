@@ -49,8 +49,18 @@ label {
     background-color: #428bca;
     border-color: #357ebd; }
 
+.container {
+  margin: 30px auto; 
+}
 
-/* custom ids and classes */
+/* customs */ 
+
+.content-page {
+  margin-top: 70px; 
+}
+
+
+/* Pre-launch Landing Page */
 #ucanbe {
   text-align: center; 
   margin-bottom: 50px;
@@ -65,9 +75,6 @@ label {
   font-style: italic;
 }
 
-.container {
-  margin: 30px auto; 
-}
 
 .typer {
   font-size: 1.5em;
@@ -77,20 +84,67 @@ label {
   }
 }
 
+/* _productsteps partial */
+
+.productsteps {
+  text-align: center;
+} 
+
+.productunit img {
+  margin: auto;
+}
+
+/* _pricingtable partial */
+
+.pricingtable {
+  text-align: center; 
+  h5 { 
+    color: $gray;
+    line-height: 1.5em;
+    font-size: 1.5em;  
+  }
+}
+
+.pricingunit {
+  border: 1px solid $lightgray; 
+  img {
+    margin: auto;
+  }
+}
+
+
+.pricingfooter {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+
+/* _navigation partial  */
+
+.navbar-default {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.navbar .container {
+  margin: 0 auto 5px auto;
+}
+
+.navbar li a {
+  font-size: 1.25em;
+  padding-top: 20px;
+  span {
+    border-bottom: 1px dashed;
+  }
+}
+
+
+
+/* _footer partial */ 
 .footer {
   border-top: 1px solid $lightgray;
   font-size: .75em;
   margin-top: 25px;
   padding: 25px 0;
 }
-
-.productsteps {
-  text-align: center;
-}
-
-.pricingtable {
-  text-align: center; 
-}
-
-
 

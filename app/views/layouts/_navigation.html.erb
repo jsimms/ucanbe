@@ -1,0 +1,26 @@
+<!-- Navigation -->
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Brand name -->
+            <a class="navbar-brand" href="https://ucanbe.com"><%= image_tag("https://s3.amazonaws.com/ucanbe-production/images/ucanbe-logo%402x.png", :size => "83x30") %></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><%= link_to raw('<span>Subscribe</span>'), static_pages_littlebits_path %></li>
+                <li><%= link_to raw('<span>About</span>'), about_path %></li>
+                <li><%= link_to raw('<span>Contact</span>'), contact_path %></li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,9 +1,22 @@
 <!-- Footer -->
-<footer class="footer"> 
-	<small>
-		&copy; UCanBe 
-	</small>
-</footer>
+<div class="container">
+	<footer class="footer">
+		<div class="row">
+		    <div class="col-sm-7 text-left">
+		        <span class="glyphicon glyphicon-wrench"></span> Made in NYC by <a href="http://learningedgelabs.com">Learning Edge Labs</a> | <%=link_to "About UCanBe", about_path %> | <%= link_to "Contact Us", contact_path %> 
+		    </div>
+		    <div class="col-sm-5 text-right">
+		        <!--<ul class="list-inline no-space-bottom">
+		            <li><a href="https://twitter.com/UCanbe">Twitter logo</a></li>
+		            <li><a href="https://facebook.com/">Facebook logo</a></li>
+		            <li><a href="https://pinterest.com/">Pinterest logo</a></li>
+		            <li><a href="https://tumblr.com/">Tumblr logo</a></li>
+		        </ul>-->
+		    </div>
+		</div>
+	</footer>
+</div>
+
 
 <!--js-->
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>

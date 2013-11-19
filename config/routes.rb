@@ -1,12 +1,12 @@
 Ucanbe::Application.routes.draw do
   root :to => "static_pages#landing"
 
-  get "static_pages/landing"
-  get "static_pages/home"
-  get "static_pages/how"
-  get "static_pages/contact"
+  get   "/about" => "static_pages#about"
+  get   "/contact" => "static_pages#contact"
+  get   "static_pages/littlebits"
+  
+  match '/order-lb',  to: 'static_pages#littlebits',  via: 'get'
 
-  get 'mcsubscribe/index'
   post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   
   mount Split::Dashboard, :at => 'split'

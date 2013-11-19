@@ -3,8 +3,9 @@ Ucanbe::Application.routes.draw do
 
   get   "/about" => "static_pages#about"
   get   "/contact" => "static_pages#contact"
-  get   "/sparkbox-littlebits" => "static_pages#sparkbox_littlebits"
-
+  get   "static_pages/littlebits"
+  
+  match '/order-lb',  to: 'static_pages#littlebits',  via: 'get'
 
   post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   

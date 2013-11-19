@@ -8,6 +8,6 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def sparkbox_littlebits
+  def littlebits
   end 
 end

@@ -1,2 +1,44 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div id="about" class="container">
+
+	<h1>About UCanBe</h1>
+	<p class="lead">STEM (Science, Technology, Engineering, Mathematics) education starts at home. We help busy, but involved parents stay on top of it and keep their kids interested.</p>
+
+	<div class="col-md-4 col-md-push-8">
+		<div class="text-left">
+			<div class="well">
+				<h3>Order A Box</h3>
+				<p>Shipping starts January 15<sup>th</sup>. As low as 19/month. Cancel anytime.</p>
+				<%= link_to "Get Yours", static_pages_littlebits_path, class: "btn btn-sm btn-primary" %> 
+			</div>
+			<hr>
+			<div>
+				<h4>Have Questions?</h4>
+				<p>Don't hesitate to <a href="mailto:support@ucanbe.com?subject=UCanBe: General Questions">write to us</a>. We'd love to answer them.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-8 col-md-pull-4">
+		<div class="text-left">
+			<h3>What's in a box?</h3>
+			<p>Each monthly UCanBe box contains all the materials and instructions needed for a very exciting yet simple STEM project. Each project is designed to be about a 90 minute weekend or after school parent/child effort that exposes your children to fun engineering projects&mdash;hopefully sparking there interest in STEM and building a passion to keep pursuing it and building these important 21st century skills.</p>
+
+			<h3>Core Principles</h3>
+			<ul>
+				<li><strong>Invoke</strong> interest in building and creating</li>
+				<li><strong>Encourage</strong> lofty aspirations and strong imaginations</li>
+				<li><strong>Kid led</strong> and not the other way around</li> 
+				<li><strong>Experimentation</strong> is part of the process of solving problems</li>
+				<li><strong>Waste not</strong> by creating projects around reusable and existing toy "platforms"</li>  
+			</ul>
+
+			<h3>Ivy League Researched Developmental Areas</h3>
+			<p>We've developed our curriculum with the help of leading child education experts from Ivy League institutions. Our lessons work these types of developmental areas .... place holder text until I know what to say.</p>
+
+			<%= render 'layouts/productsteps' %>	
+		</div>
+
+
+	</div>
+
+</div>

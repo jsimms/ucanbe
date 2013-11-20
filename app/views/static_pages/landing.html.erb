@@ -3,25 +3,13 @@
 	<p class="lead typer">Inspire your <span id="kid" data-typer-targets="grandson,niece,youngest,granddaughter,oldest,nephew,kid,child">child</span> to <span id="dream" data-typer-targets="be an architect,launch a rocketship,build skyscrapers,start the next big tech company,be an electrical engineer,build robots,be a rocket scientist">be a rocket scientist</span></p>
 </div>
 
-<div class="container">
-	<div class="row">
-	  <div class="col-md-12">
-	    <h2>Monthly technology projects to do with your kids.</h2>
-	  </div>	  
-	</div>
 
-	<div class="well">
-		<form accept-charset="UTF-8" action="/mcsubscribe/subscribe" data-remote="true" id="mcsubscribe" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div> 
-			<div class="form-group">	
-				<label for="email">Join our waiting list and be the first to learn about our inagural lesson box.</label> 
-				<input id="email" name="email[address]" placeholder="Email Address" type="email" class="form-control" />
-				<div id="response"></div>
-			</div>
-	  	<input class="btn btn-primary clearfix" name="commit" type="submit" value="Join Waiting List" />
-	  	</form>
-	</div>
+<div class="container" id="lede"> 
+	<h2>Monthly technology projects to do with your kids</h2>
+	<span><%= link_to "Pick a Subscription", static_pages_littlebits_path, class: "btn btn-primary btn-default" %> or <%= link_to "learn more", about_path %>.</span>
 </div>
 
+	
 <div class="container">
 	<%= render 'layouts/productsteps' %>	
 	<div class="col-md-12">

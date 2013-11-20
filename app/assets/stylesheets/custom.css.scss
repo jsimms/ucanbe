@@ -60,7 +60,7 @@ label {
 }
 
 
-/* Pre-launch Landing Page */
+/* Landing Page */
 #ucanbe {
   text-align: center; 
   margin-bottom: 50px;
@@ -70,11 +70,17 @@ label {
   margin: 20px 0 30px 0; 
 }
 
-#response {
-  font-weight: bold; 
-  font-style: italic;
-}
 
+#lede {
+
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  span {
+    color: gray;
+  }
+}
 
 .typer {
   font-size: 1.5em;
@@ -83,6 +89,13 @@ label {
   color: $ucanbe-purple;
   }
 }
+
+/* _mailchimp partial */
+#response {
+  font-weight: bold; 
+  font-style: italic;
+}
+
 
 /* _productsteps partial */
 

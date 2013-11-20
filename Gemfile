@@ -7,6 +7,8 @@ gem 'pg', '0.15.1'
 
 gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
 gem 'bootstrap-sass', '~> 3.0.1.0.rc'
+gem 'font-awesome-sass'
+
 gem 'bcrypt-ruby', '3.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'

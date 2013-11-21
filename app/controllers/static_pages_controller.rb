@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def choose
+  end 
+
   def littlebits
   end 
 end

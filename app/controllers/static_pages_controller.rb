@@ -11,6 +11,18 @@ class StaticPagesController < ApplicationController
   def choose
   end 
 
-  def littlebits
+  def confirmation
+  end 
+
+  def aboutlb
+  end 
+
+  def planlb
+  end 
+
+  def orderlb
+  end 
+
+  def giftlb
   end 
 end

@@ -90,6 +90,32 @@ label {
   }
 }
 
+/* subscribe steps */
+
+.subscribestep {
+  text-align: left; 
+  h5 { 
+    color: $gray;
+    line-height: 1.5em;
+    font-size: 1.5em;  
+  }
+}
+
+.subscribeunit {
+  text-align: center;
+  img {
+    margin: auto;
+  }
+}
+
+
+.subscribefooter {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+
 /* _mailchimp partial */
 #response {
   font-weight: bold; 
@@ -151,7 +177,6 @@ label {
     border-bottom: 1px dashed;
   }
 }
-
 
 
 /* _footer partial */ 

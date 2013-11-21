@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def choose
   end 
 
+  def gift
+  end 
+
   def confirmation
   end 
 
@@ -21,8 +24,5 @@ class StaticPagesController < ApplicationController
   end 
 
   def orderlb
-  end 
-
-  def giftlb
   end 
 end

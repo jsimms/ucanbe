@@ -4,12 +4,13 @@ Ucanbe::Application.routes.draw do
   get   "/contact" => "static_pages#contact"
   
   get   "/choose" => "static_pages#choose"
+  get   "/gift" => "static_pages#gift"
   get   "/confirmation" => "static_pages#confirmation"
 
   get   "/aboutlb" => "static_pages#aboutlb"
   get   "/planlb" => "static_pages#planlb"
-  get   "/orderlb" => "static_pages#orderlb"
-  get   "/giftlb" => "static_pages#giftlb"
+  get   "/orderlb" => "static_pages#orderlb" 
+
 
   post 'mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   

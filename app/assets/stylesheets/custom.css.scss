@@ -59,6 +59,10 @@ label {
   margin-top: 70px; 
 }
 
+.landing {
+  margin-top: 150px;
+}
+
 .team {
   text-align: center;
 }
@@ -79,6 +83,8 @@ label {
 
   h2 {
     margin: 0 0 20px 0;
+    font-size: 1.5em;
+    font-weight: normal;
   }
 
   span {
@@ -87,7 +93,8 @@ label {
 }
 
 .typer {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: 500;
   span {
   font-style: italic;
   color: $ucanbe-purple;

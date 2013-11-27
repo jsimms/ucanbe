@@ -9,4 +9,7 @@ class SubscribeController < ApplicationController
 	def onemonth
 	end 
 
+	def thankyou
+	end
+
 end

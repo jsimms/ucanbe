@@ -9,5 +9,8 @@ class GiftController < ApplicationController
 	def threemonths
 	end 
 
+	def thankyou
+	end 
+
 end
 

@@ -7,12 +7,15 @@ Ucanbe::Application.routes.draw do
   get   "/subscribe" => "subscribe#index"
   get   "/subscribe/littlebits" => "subscribe#littlebits"
   get   "/subscribe/littlebits/onemonth" => "subscribe#onemonth"
+  get   "/subscribe/thankyou" => "subscribe#thankyou"
   
   get   "/gift" => "gift#index"
   get   "/gift/onemonth" => "gift#onemonth"
   get   "/gift/threemonths" => "gift#threemonths"
+  get   "/gift/thankyou" => "gift#thankyou"
 
   get   "/buy/littlebitsstarter" => "buy#littlebitsstarter"
+  get   "/buy/thankyou" => "buy#thankyou"
 
   post '/mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   

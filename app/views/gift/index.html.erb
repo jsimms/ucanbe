@@ -3,37 +3,52 @@
 	<div class="subscribestep">
     <div class="row">
       <div class="col-sm-12">
-        <h3>Choose Gift</h3>
-        <p class="lead">What a great gift idea! You'll make a future engineer very happy. :)</p>
+        <h3>Gift a Subscription</h3>
+        <p class="lead">After you purchase a gift subscription, we will send you a personalized coupon code and redemption instructions to give the recipient.</p>
       </div>
     </div>
     <div class="row">
     	<div class="subscribeunit">
 	      <div class="col-sm-4">
-	      	<a href="https://app.moonclerk.com/pay/37hehv6rl1" class="btn sub-btn">
-		        <img src="https://s3.amazonaws.com/ucanbe-production/images/subscribe/01-box-200x300.png" class="img-responsive" alt="...">
-		        <h5>1 Month Subscription</h5>
-		        <p class="lead">$29.95</p>
-	      	</a>
+	        <img src="https://s3.amazonaws.com/ucanbe-production/images/subscribe/01-box-200x300.png" class="img-responsive" alt="...">
+	        <%= link_to "1 Month / $29.95", "https://app.moonclerk.com/pay/37hehv6rl1", target: "_blank", class: "btn btn-primary btn-lg" %>
 	      </div>
 	    </div>
     	<div class="subscribeunit">
 	      <div class="col-sm-4">
-	      	<a href="https://app.moonclerk.com/pay/1z5c3x9y8nt" class="btn sub-btn">
-		        <img src="https://s3.amazonaws.com/ucanbe-production/images/subscribe/03-box-200x300.png" class="img-responsive" alt="...">
-		        <h5>3 Month Subscription</h5>
-		        <p class="lead">$79.95</p>
-	      	</a>
+	        <img src="https://s3.amazonaws.com/ucanbe-production/images/subscribe/03-box-200x300.png" class="img-responsive" alt="...">
+	        <%= link_to "3 Months / $79.95", "https://app.moonclerk.com/pay/1z5c3x9y8nt", target: "_blank", class: "btn btn-primary btn-lg" %>
 	      </div>
 	    </div>  	    
-    </div>
+    </div>   
     <div class="row">
 	    <div class="subscribefooter">
 	      <div class="col-sm-12">
-	      	<p>We will send a personal coupon code after checkout. All months billed upfront.</p>
+	      	<p>All months billed upfront.</p>
 	      </div>
 	    </div>
     </div>
 	</div>
+
+	<div class="subscribestep">
+		<hr>
+		<div class="row">
+      <div class="col-sm-12">
+        <h3>Get a Starter Kit</h3>
+        <p class="lead">Do you know what lesson path your gift recipient will do? Order the respective starter kit and we will ship it now.</p>
+      </div>
+    </div>
+    <div class="row">
+    	<div class="subscribeunit">
+	      <div class="col-sm-4">
+	        <span class="pathicon glyphicon glyphicon-flash"></span>
+	        <h5>Electrical Engineering <small><%= link_to "(uses LittleBits)", aboutlittlebits_path %></small></h5>
+	        <div class="ui-group-buttons">
+	        	<%= link_to "Get Starter Kit", "https://app.moonclerk.com/pay/ouncaf3il7", target: "_blank", class: "btn btn-default btn-lg" %>
+	        </div>
+	      </div>
+	    </div>	    
+    </div>
+  </div>  
 
 </div>

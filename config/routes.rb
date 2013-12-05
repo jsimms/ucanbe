@@ -7,9 +7,6 @@ Ucanbe::Application.routes.draw do
   get   "/subscribe" => "subscribe#index"
   get   "/subscribe/onemonth" => "subscribe#onemonth"
   get   "/subscribe/thankyou" => "subscribe#thankyou"
-  
-  get   "/gift" => "gift#index"
-  get   "/gift/thankyou" => "gift#thankyou"
 
   get   "/buy/thankyou" => "buy#thankyou"
 

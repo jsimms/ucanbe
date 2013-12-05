@@ -5,6 +5,7 @@ Ucanbe::Application.routes.draw do
   get   "/aboutlittlebits" => "static_pages#aboutlittlebits"  
 
   get   "/subscribe" => "subscribe#index"
+  get   "/subscribe/onemonth" => "subscribe#onemonth"
   get   "/subscribe/thankyou" => "subscribe#thankyou"
   
   get   "/gift" => "gift#index"

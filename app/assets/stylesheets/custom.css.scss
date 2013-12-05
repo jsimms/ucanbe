@@ -33,6 +33,10 @@ label {
   margin: 30px auto; 
 }
 
+.media {
+  margin-top: 30px;
+}
+
 /* buttons */ 
 
 
@@ -72,10 +76,6 @@ label {
 .ui-group-buttons .btn:first-child{margin-left:0;border-top-left-radius:.25em;border-bottom-left-radius:.25em;padding-right:15px}
 .ui-group-buttons .btn:last-child{border-top-right-radius:.25em;border-bottom-right-radius:.25em;padding-left:15px}
 
-
-/* .sub-btn {
-  border: 1px solid $lightgray;
-}*/
 
 /* customs */ 
 
@@ -150,10 +150,9 @@ label {
   font-size: 1.1em;
 }
 
-.pathicon {
-  font-size: 13em;
-  margin: 20px 0;
-  }
+.subscribebrand {
+  margin-top: auto;
+}
 
 
 /* _mailchimp partial */

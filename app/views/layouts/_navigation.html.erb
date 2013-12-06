@@ -7,10 +7,9 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
             </button>
             <!-- Brand name -->
-            <%=link_to image_tag("https://s3.amazonaws.com/ucanbe-production/images/ucanbe-logo%402x.png", :size => "83x30"), root_path, :class=> "navbar-brand" %>
+            <%=link_to image_tag("https://s3.amazonaws.com/ucanbe-production/images/ucanbe-logo%402x.png", :size => "110x40"), root_path, :class=> "navbar-brand" %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,7 +17,6 @@
             <ul class="nav navbar-nav">
                 <li><%= link_to raw('<span>Get Started</span>'), subscribe_path %></li>
                 <li><%= link_to raw('<span>About</span>'), about_path %></li>
-                <li><%= link_to raw('<span>Contact</span>'), contact_path %></li>
             </ul>
         </nav>
     </div>

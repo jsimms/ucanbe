@@ -2,13 +2,10 @@ Ucanbe::Application.routes.draw do
   root :to => "static_pages#landing"
   get   "/about" => "static_pages#about"
   get   "/contact" => "static_pages#contact"
-  get   "/aboutlittlebits" => "static_pages#aboutlittlebits"  
+  get   "/curriculum" => "static_pages#curriculum" 
 
   get   "/subscribe" => "subscribe#index"
-  get   "/subscribe/onemonth" => "subscribe#onemonth"
   get   "/subscribe/thankyou" => "subscribe#thankyou"
-
-  get   "/buy/thankyou" => "buy#thankyou"
 
   post '/mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   

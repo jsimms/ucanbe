@@ -146,8 +146,17 @@ ul.icon li:before {
 /* _navigation partial  */
 
 .navbar-default {
-  background-color: #fff;
+  background-color: $ucanbe-purple;
   border: 1px solid #ccc;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; 
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: $ucanbe-green;
+  background-color: transparent; 
 }
 
 .navbar .container {
@@ -156,7 +165,7 @@ ul.icon li:before {
 
 .navbar li a {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 1.25em;
+  font-size: 1.5em;
   padding-top: 25px;
   span {
     border-bottom: 1px dashed;

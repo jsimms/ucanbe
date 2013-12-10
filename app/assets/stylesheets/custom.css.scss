@@ -1,31 +1,22 @@
 /* Imports, mixins, variables */ 
 
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 $lightgray: #ccc; 
 $ucanbe-purple: #4D3A84;
 $ucanbe-green: #93C01F;
 $ucanbe-orange: #EF9100; 
 
-/* some basics */ 
+/* Global Typography and Classes */ 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive;
   color: $ucanbe-purple;
 }
 
-a {
-  color: $ucanbe-green;
-}
-
-a:hover {
-  color: #84AD1C; 
-}
-
-
-p, li {
-  color: gray;
-}
-
-label {
+p, li, label {
+  font-family: 'Lato', sans-serif;
   color: gray;
 }
 
@@ -37,7 +28,20 @@ label {
   margin-top: 30px;
 }
 
-/* buttons */ 
+.content-page {
+  margin-top: 100px; 
+}
+
+
+/* Global Anchors and Buttons */ 
+
+a {
+  color: $ucanbe-green;
+}
+
+a:hover {
+  color: #84AD1C; 
+}
 
 
 .btn-primary {
@@ -81,21 +85,10 @@ label {
   margin-bottom: 20px;
 }
 
-/* customs */ 
 
-.content-page {
-  margin-top: 80px; 
-}
 
-.landing {
-  margin-top: 150px;
-}
 
-.team {
-  text-align: center;
-}
-
-/* wrench icon li */
+/* Lists  */
 ul.icon { 
   padding-left:20px; list-style:none; 
 }
@@ -122,7 +115,6 @@ ul.icon li:before {
   margin: 20px 0 30px 0; 
 }
 
-
 #lede {
 
   h2 {
@@ -130,48 +122,16 @@ ul.icon li:before {
     font-size: 1.5em;
     font-weight: normal;
   }
-
   span {
     color: gray;
   }
 }
 
 .typer {
-  font-size: 2em;
-  font-weight: 500;
   span {
   font-style: italic;
   color: $ucanbe-purple;
   }
-}
-
-/* subscribe steps */
-
-.subscribestep {
-  text-align: left; 
-  h5 { 
-    color: $gray;
-    line-height: 1.5em;
-    font-size: 1.5em;  
-  }
-}
-
-.subscribeunit {
-  text-align: center;
-  img {
-    margin: 30px auto;
-  }
-}
-
-
-.subscribefooter {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.1em;
-}
-
-.subscribebrand {
-  margin-top: auto;
 }
 
 
@@ -179,43 +139,6 @@ ul.icon li:before {
 #response {
   font-weight: bold; 
   font-style: italic;
-}
-
-
-/* _productsteps partial */
-
-.productsteps {
-  text-align: left;
-  margin-top: 40px;
-} 
-
-.productunit img {
-  margin: 20px auto;
-}
-
-/* _pricingtable partial */
-
-.pricingtable {
-  text-align: left; 
-  h5 { 
-    color: $gray;
-    line-height: 1.5em;
-    font-size: 1.5em;  
-  }
-}
-
-.pricingunit {
-  text-align: center;
-  img {
-    margin: auto;
-  }
-}
-
-
-.pricingfooter {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.1em;
 }
 
 
@@ -231,6 +154,7 @@ ul.icon li:before {
 }
 
 .navbar li a {
+  font-family: 'Luckiest Guy', cursive;
   font-size: 1.25em;
   padding-top: 25px;
   span {

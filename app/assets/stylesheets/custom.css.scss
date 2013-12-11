@@ -32,6 +32,20 @@ p, li, label {
   margin-top: 100px; 
 }
 
+/* Color Classes */ 
+
+.purplestuff {
+  color: $ucanbe-purple;
+}
+
+.orangedrink {
+  color: $ucanbe-orange;
+}
+
+.ectocooler {
+  color: $ucanbe-green;
+}
+
 
 /* Global Anchors and Buttons */ 
 
@@ -121,10 +135,7 @@ ul.icon li:before {
     margin: 0 0 20px 0;
     font-size: 1.5em;
     font-weight: normal;
-  }
-  span {
-    color: gray;
-  }
+  } 
 }
 
 .animation {

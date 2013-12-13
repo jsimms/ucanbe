@@ -7,7 +7,7 @@
 $lightgray: #ccc; 
 $ucanbe-purple: #4D3A84;
 $ucanbe-green: #93C01F;
-$ucanbe-orange: #EF9100; 
+$ucanbe-orange: #EF9100;
 
 /* Global Typography and Classes */ 
 h1, h2, h3, h4, h5, h6 {
@@ -20,19 +20,43 @@ p, li, label {
   color: gray;
 }
 
+
+/* Content containers */ 
+
+.content-page {
+  margin-top: 76px; 
+}
+
+.content-header {
+  background-color: $ucanbe-purple;
+  padding-top: 10px;
+  text-align: center;
+  display: block;
+  position: relative;
+  h1 {
+    color: white;
+  }
+  img { 
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
 .container {
-  margin: 30px auto; 
+  margin: 30px auto;
+  text-align: center;
 }
 
 .media {
   margin-top: 30px;
 }
 
-.content-page {
-  margin-top: 100px; 
-}
 
-/* Color Classes */ 
+/* Color Classes...try not to use these... */ 
+
+.white {
+  color: white;
+}
 
 .purplestuff {
   color: $ucanbe-purple;
@@ -99,9 +123,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-
-
-
 /* Lists  */
 ul.icon { 
   padding-left:20px; list-style:none; 
@@ -117,39 +138,20 @@ ul.icon li:before {
     margin:0 5px 0 -15px;
 }
 
-
-
 /* Landing Page */
-#ucanbe {
-  text-align: center; 
-  margin-bottom: 50px;
-}
-
-#logo {
-  margin: 20px 0 30px 0; 
-}
-
-#lede {
-
-  h2 {
-    margin: 0 0 20px 0;
-    font-size: 1.5em;
-    font-weight: normal;
-  } 
-}
 
 .animation {
   color: $ucanbe-green;
 }
 
 .rotate {
-    color: $ucanbe-purple;
+  display: inline-block;
 }
 
 .getstarted {
   display: block;
-  margin: 20px auto 0 auto;
-  height: 65px;
+  margin: 0 auto 10px auto;
+   height: 65px;
   width: 200px;
   background: url('//s3.amazonaws.com/ucanbe-production/images/getstartedbutton.png') bottom left;
   text-indent: -99999px;
@@ -170,7 +172,7 @@ ul.icon li:before {
 
 .navbar-default {
   background-color: $ucanbe-purple;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .navbar-default .navbar-nav > li > a {

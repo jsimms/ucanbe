@@ -9,7 +9,7 @@ $ucanbe-purple: #4D3A84;
 $ucanbe-green: #93C01F;
 $ucanbe-orange: #EF9100;
 
-/* Global Typography and Classes */ 
+/* Typography */ 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Luckiest Guy', cursive;
   color: $ucanbe-purple;
@@ -22,6 +22,11 @@ p, li, label {
 
 
 /* Content containers */ 
+
+body {
+  background-image: url(//s3.amazonaws.com/ucanbe-production/images/tiny_grid.png);
+  background-repeat: repeat;
+}
 
 .content-page {
   margin-top: 76px; 
@@ -74,11 +79,12 @@ p, li, label {
 /* Global Anchors and Buttons */ 
 
 a {
-  color: $ucanbe-green;
+  color: $ucanbe-orange;
 }
 
 a:hover {
-  color: #84AD1C; 
+  color: $ucanbe-orange;
+  text-decoration-style: dashed;  
 }
 
 
@@ -180,7 +186,7 @@ ul.icon li:before {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: $ucanbe-green;
+  color: $ucanbe-orange;
   background-color: transparent; 
 }
 

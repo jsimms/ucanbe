@@ -6,10 +6,16 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def aboutlittlebits
-  end 
-
   def contact
   end
+
+  def curriculum 
+  end
+
+  def privacy
+  end
+
+  def terms
+  end 
  
 end

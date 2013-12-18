@@ -2,7 +2,9 @@ Ucanbe::Application.routes.draw do
   root :to => "static_pages#landing"
   get   "/about" => "static_pages#about"
   get   "/contact" => "static_pages#contact"
-  get   "/curriculum" => "static_pages#curriculum" 
+  get   "/curriculum" => "static_pages#curriculum"
+  get   "/privacy-policy" => "static_pages#privacy" 
+  get   "/terms-of-service" => "static_pages#terms"
 
   get   "/subscribe" => "subscribe#index"
   get   "/subscribe/thankyou" => "subscribe#thankyou"

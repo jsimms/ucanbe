@@ -3,8 +3,8 @@ Ucanbe::Application.routes.draw do
   get   "/about" => "static_pages#about"
   get   "/contact" => "static_pages#contact"
   get   "/curriculum" => "static_pages#curriculum"
-  get   "/privacy-policy" => "static_pages#privacy" 
-  get   "/terms-of-service" => "static_pages#terms"
+  get   "/privacy" => "static_pages#privacy" 
+  get   "/terms" => "static_pages#terms"
 
   get   "/subscribe" => "subscribe#index"
   get   "/subscribe/thankyou" => "subscribe#thankyou"

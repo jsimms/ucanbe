@@ -9,6 +9,9 @@ Ucanbe::Application.routes.draw do
   get   "/subscribe" => "subscribe#index"
   get   "/subscribe/thankyou" => "subscribe#thankyou"
 
+  get   "/deepdive" => "projects#index"
+
+
   post '/mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   
   mount Split::Dashboard, :at => 'split'

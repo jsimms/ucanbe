@@ -1,57 +1,74 @@
 <div class="content-page">
-	<div class="container">	
+	<div class="content-header">
 		<h1>Project 102: Smart Car <span class="ectocooler">Deep Dive</span></h1>
+		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/projects/project-smart-car.png", class: "img-responsive hidden-xs") %>
+		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/projects/project-smart-car-sm.png", class: "img-responsive visible-xs") %>
+	</div>
+	<div class="container">	
 		<div class="text-left">
-			<p class="lead">Learn more about the concepts that go behind building the smart cars of the future.</p> 
-			<p>Circuits</p>
+
+			<h3>Smart cars in action</h3>
+			<p class="lead">Get inspired by the smart cars that today's engineers are building. We think these are some of the coolest cars on the planet.</p>
+
+			<h5>Robotic Cars</h5>
+			<p>The video below from Nova ScienceNow introduces tiny, battery-powered cars that can talk to each other and drive themselves.</p>
+			<p><iframe width="512" height="376" src="http://video.pbs.org/viralplayer/1801235517" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" seamless></iframe></p>
+
+			<h5>Google Self-Driving Car</h5>
+			<p>Check out the video below to see the self-driving car engineers at Google are building and how it can change lives.</p>
+			<p><iframe width="560" height="315" src="//www.youtube.com/embed/cdgQpa1pUUE" frameborder="0" allowfullscreen></iframe></p>
+
+			<h5>Nissan Self-Driving Car</h5>
+			<p>In this promotional video from Nissan you'll get a peek at a car that is able to drive and turn with no input from a driver. The car manufacturer says these cars could hit the road as soon as 2020.</p>
+			<p><iframe src="http://embedded-video.guardianapps.co.uk/?a=false&amp;u=/technology/video/2013/aug/28/nissan-self-driving-car-video" frameborder="0" width="460" height="397"></iframe></p>
+
+			<h5>Sensors in Cars</h5>
+			<p>Self-driving cars rely heavily on sensors to get around. Watch the video below to learn about the sensors used in smart cars.</p> 
+			<p><iframe id="dit-video-embed" width="640" height="360" src="http://snagplayer.video.dp.discovery.com/484602/snag-it-player.htm?auto=no" frameborder="0" scrolling="no" allowtransparency="true"></iframe></p>
+
+			<h3>Diving Deeper</h3>
+			<p class="lead">Ready to explore a little more about the key components around the smart car project? We've got what you're looking for.</p>
+
+			<h5>Circuits</h5>
+			<p>Curious how circuits work? Interested in creating your own circuits? These links will help you get started.</p>
 			<ul>
 				<li><%=link_to "How circuits work", "http://kids.discovery.com/tell-me/curiosity-corner/science/how-do-electric-circuits-work", target: "_blank" %></li>
 				<li><%=link_to "What is a circuit?", "http://www.youtube.com/watch?v=VnnpLaKsqGU", target: "_blank" %></li>
 				<li><%=link_to "Learn about electricity" , "http://sciencewithme.com/learn-about-electricity/", target: "_blank" %></li> 
 				<li><%=link_to "Build and test circuits online" , "http://www.cleo.net.uk/consultants_resources/science/circuitWorld/index.html", target: "_blank" %></li>
 			</ul>
- 
-			<p>Power Sources</p>
+
+			<h5>Power Sources</h5>
+			<p>Your smart car uses a battery as its power source, but there are many other types of power sources available. Check out how batteries work and some of the other types of power sources out there.</p>
 			<ul>
 				<li><%=link_to "How does a battery work?", "http://engineering.mit.edu/ask/how-does-battery-work", target: "_blank" %></li>
 				<li><%=link_to "How does a battery work? (Video)", "http://www.youtube.com/watch?v=KkRwuM4S8BQ", target: "_blank" %></li>
 				<li><%=link_to "Alternative energy sources", "http://www.alliantenergykids.com/EnergyandTheEnvironment/RenewableEnergy/", target: "_blank" %></li>
 			</ul>
 
-			<p>Motors</p>
-			<ul>
-				<li><%=link_to "How motors work", "http://www.youtube.com/watch?v=yJyVTd_O-vw", target: "_blank" %></li>
-			</ul>
+			<h5>Motors</h5>
+			<p>Wondering how the motor in your smart car works? We like the explanation below.</p>
+			<p><iframe width="420" height="315" src="//www.youtube.com/embed/yJyVTd_O-vw" frameborder="0" allowfullscreen></iframe></p>
 
-			<p>AC vs DC</p>
-			<ul>
-				<li><%=link_to "Battle of the Currents (Video)", "http://www.youtube.com/watch?v=dIfIRj0Crc8", target: "_blank" %></li>
-				<li><%=link_to "The War of the Currents", "http://energy.gov/articles/war-currents-ac-vs-dc-power", target: "_blank" %></li>
-				<li><%=link_to "AC vs CD", "http://www.diffen.com/difference/Alternating_Current_vs_Direct_Current", target: "_blank" %></li>
-			</ul>
-
-			<p>Car design</p>
-			<ul>
-				<li><%=link_to "Elio concept car", "http://www.youtube.com/watch?v=2Ge1ZGi1bTQ", target: "_blank" %></li>
-				<li><%=link_to "Top 5 Reasons Why Cars Look the Same", "http://cnettv.cnet.com/reasons-why-cars-look-same/9742-1_53-50134110.html", target: "_blank" %></li>
-				<li><%=link_to "How Car Design Works", "http://www.torquenews.com/1080/how-car-design-works-start-finish", target: "_blank" %></li>
-			</ul>
-
-			<p>Sensors</p>
+			<h5>Sensors</h5>
+			<p>Different sensors work in different ways. The links below will help you understand how door sensors and motion sensors work, but don't stop here. Google the phrase "types of sensors" and start exploring on your own.</p>
 			<ul>
 				<li><%=link_to "The Sensor Revolution", "http://www.nsf.gov/news/special_reports/sensor/overview.jsp", target: "_blank" %></li>
-				<li><%=link_to "How Do Automatic Door Sensors Work", "http://lerablog.org/technology/how-do-automatic-door-sensors-work/", target: "_blank" %></li>
+				<li><%=link_to "How Do Automatic Door Sensors Work?", "http://lerablog.org/technology/how-do-automatic-door-sensors-work/", target: "_blank" %></li>
 				<li><%=link_to "How Motion Sensors Work", "http://home.howstuffworks.com/home-improvement/household-safety/security/question238.htm", target: "_blank" %></li>
-			</ul>
-			
-			<p>Smart Cars</p>
+			</ul>			
+
+			<h5>Car design</h5>
+			<p>The smart car project follows a pretty familiar car design. But cars didn't always look the way they do, and they may change again in the future. Learn a little more about concept cars, how car design works, and why today's cars look so similar.</p>
 			<ul>
-				<li><%=link_to "Tiny battery-powered self-driving car", "http://video.pbs.org/video/1801235517/", target: "_blank" %></li>
-				<li><%=link_to "Google self-driving car", "http://www.youtube.com/watch?v=cdgQpa1pUUE", target: "_blank" %></li>
-				<li><%=link_to "Nissan driverless car", "http://www.theguardian.com/technology/video/2013/aug/28/nissan-self-driving-car-video", target: "_blank" %></li>
-				<li><%=link_to "Sensors in cars", "http://auto.howstuffworks.com/car-driving-safety/32250-future-car-safety-sensors-video.htm", target: "_blank" %></li>
+				<li><%=link_to "Elio concept car", "http://www.youtube.com/watch?v=2Ge1ZGi1bTQ", target: "_blank" %></li>
+				<li><%=link_to "How Car Design Works", "http://www.torquenews.com/1080/how-car-design-works-start-finish", target: "_blank" %></li>
+				<li><%=link_to "Top 5 Reasons Why Cars Look the Same", "http://cnettv.cnet.com/reasons-why-cars-look-same/9742-1_53-50134110.html", target: "_blank" %></li>
 			</ul>
 
+			<h5>AC vs DC</h5>
+			<p>The smart car project uses DC power, as do all battery powered electronics. When you plug an applience into a wall, you are using AC power, but that wasn't always the case. In the late 1880s two famous scientists (Thomas Edison and Nikola Tesla) had a big argument over whether <%=link_to "AC or DC", "http://www.diffen.com/difference/Alternating_Current_vs_Direct_Current", target: "_blank" %> was better. This was called <%=link_to "The War of the Currents", "http://energy.gov/articles/war-currents-ac-vs-dc-power", target: "_blank" %>, and both men went to great lengths to win their side of the argument. You can learn more about AC and DC power, and also about the War of the Currents, below.</p>
+			<p><iframe width="560" height="315" src="//www.youtube.com/embed/dIfIRj0Crc8" frameborder="0" allowfullscreen></iframe></p>
 		</div>
 	</div>
 </div>

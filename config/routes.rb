@@ -6,8 +6,8 @@ Ucanbe::Application.routes.draw do
   get   "/privacy" => "static_pages#privacy" 
   get   "/terms" => "static_pages#terms"
 
-  get   "/subscribe" => "subscribe#index"
-  get   "/subscribe/thankyou" => "subscribe#thankyou"
+  # get   "/subscribe" => "subscribe#index"
+  # get   "/subscribe/thankyou" => "subscribe#thankyou"
 
   get   "/deepdive" => "projects#index"
 

@@ -7,20 +7,83 @@
 	<div class="content-header">
 		<h1 class="animation"><span class="ectocooler">UCanBe</span> <span class="rotate">an electrical engineer,a car designer,a software programmer,an aerospace engineer,a physics teacher,a solar engineer,a product designer,a bridge engineer,a biotech researcher, a rocket scientist</span></h1>
 
-		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/landing/landing.png", class: "img-responsive hidden-xs") %>
-		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/landing/landing-sm.png", class: "img-responsive visible-xs") %>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/landing/landing.png", class: "img-responsive hidden-xs") %>
+					<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/landing/landing-sm.png", class: "img-responsive visible-xs") %>
+				</div>
+
+				<div class="col-sm-5 well">
+					<p class="lead">We deliver science projects, so you can be anything.</p> 
+					<p>UCanBe finds the best hightech toys for kids 6-12, makes educational projects around them, and sends monthly Learn By Building kits that ignite passion and curiosity in science and technology.</p>
+					<%= render 'shared/mailchimpsignup' %>
+				</div>
+			</div>
+		</div>
 	</div>
 
-
 	<div class="container">		
-		<p class="lead">UCanBe sends you monthly Learn By Building Project Kits to ignite your passion and abilities in core Science, Technology, Engineering and Math (STEM) skills. We provide the coolest, most educational hightech toys that let you design and build real world products.</p>
+		<h3>Real learning, delivered</h3>
+		<p class="lead">Designed by thought leaders in child development, UCanBe ultilizes a <%= link_to "Learn By Building", curriculum_path %> approach to deliver:</p>
+		<div class="row">
+			<div class="col-sm-4">
+				<h4><i class="fa fa-book"></i> Concepts</h4> 
+				<p>Explain fundamental science and engineering principles in age-appropriate language.<p>
+			</div>
+			<div class="col-sm-4">
+				<h4><i class="fa fa-wrench"></i> Skills</h4> 
+				<p>Develop practical competencies, such as observation, diagnosis, debugging, planning & sequencing.</p>
+			</div>
+			<div class="col-sm-4">
+				<h4><i class="fa fa-heart-o"></i> Character</h4> 
+				<p>Encourage lifelong learning habits, such as persistence, problem solving, resourcefulness, communication, and more.</p>
+			</div>
+		</div>
+		
+		<h3>Using the best in educational play, not throwaway junk</h3>
+		<div class="container">
+			<div class="row">	
+				<div class="col-sm-6">
+					<img src="//s3.amazonaws.com/ucanbe-production/images/toys/littlebits/base-kit-projects.png" alt="littleBits" width="200">
+					<h5>littleBits</h5>
+				</div>
+				<div class="col-sm-6">
+					<img src="//s3.amazonaws.com/ucanbe-production/images/toys/makeymakey/makey-makey-logo.png" alt="makey makey" width="200">
+					<h5>Makey Makey (coming soon)</h5>
+				</div>
+			</div>	
+		</div>
 
-		<%= link_to "", subscribe_path, class: "getstarted", id: "getstarted" %>
 
-		<p class='lead'>You’ll be surprised at how much you are learning, without even trying. Fun for everyone, and recommended for kids 6 to 12 years of age.</p>
+	</div>
 
-		<h3>This Month's Project Kit: UCanBe's Smart Car</h3>
-		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/landing/landing-project-smart-car.png") %>
+	<div class="content-header">
+		<h1>Example Project Kit: <span class="ectocooler">Smart Cars</span></h1>
+		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/projects/project-smart-car.png", class: "img-responsive hidden-xs") %>
+		<%= image_tag("//s3.amazonaws.com/ucanbe-production/images/projects/project-smart-car-sm.png", class: "img-responsive visible-xs") %>
+	</div>
+
+	
+	<div class="container">
+		<h4>Design, build and race your light powered Smart Car.</h4>
+
+		<div class="text-left">	
+			<p>Using the littleBits building system&mdash;an award-winning, kid friendly electronic circuit system&mdash;learn the basics behind electronics, sensors, and more and how it applies to the future of transportation.</p>
+
+			<p>Project Kit includes:<p>
+			<ul class="icon">
+			<li class="wrench">The body and wheels to use to build your first smart car</li>
+			<li class="wrench">A Learn by Building guide with conversation starters, basic STEM principles, and cool factoids to electrify your conversation</li>
+			<li class="wrench">Extensions and build challenges to get more wattage flowing to the creative half of your brain</li>
+			</ul>
+
+			<p><strong><span class="ectocooler">A BIG IMPORTANT NOTE.</span></strong> The littleBits Base Kit is required for project assembly and is sold separately. littleBits is a very flexible, modular set of circuits and electronics components that snap together with magnets. Think of the littleBits Base Kit as the necessary electronics skeleton, and and the UCanBe boxes as the flesh and muscles that bring your project to life.</p>
+		</div>
+
+
+		<p class="well">SNEAK PEAK: What’s to come in future Project Kits? How about SmartClothes that light up; Bristlebot robots that move with vibration, SmartCrafts with electronics embedded, your personal security system and so much more.</p>	
+
 	</div>
 
 </div>

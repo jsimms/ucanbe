@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  
+<html lang="en"> <!--<![endif]-->
   <!--
                         *     .--.
                              / /  `
@@ -30,34 +33,45 @@
      \/___/\ \/    \/_____/\ \/      \/_\/_\/_\/_/
             \/              \/                    
 
-  (ASCII Rocket Cred: http://www.geocities.com/spunk1111/transp.htm#rocket)
   --> 
 
   <head>
-    <!--Metas and OG -->     
+
+    
+    <!--Metas -->     
     <title><%= full_title(yield(:title)) %></title>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="<%= meta_description(yield(:description)) %>"> 
     <meta name="keywords" content="<%= meta_keywords(yield(:keywords)) %>">
 
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <!-- OG Metas --> 
     <meta property="og:type"    content="website"/>
     <meta property="fb:page_id"   content="664572716907516" />
     <meta property="og:site_name"   content="UCanBe" />
     <meta property="og:url"     content="http://www.ucanbe.com" />
-    <meta property="og:title"     content="Inspire Genius | UCanBe" />    
+    <meta property="og:title"     content="Learn By Building | UCanBe" />    
     <meta property="og:image"     content="https://s3.amazonaws.com/ucanbe-production/images/ucanbe-logo%402x.png" />
     <meta property="og:description" content="UCanBe sends you monthly Learn By Building Project Kits to ignite your passion and abilities in core Science, Technology, Engineering and Math (STEM) skills." />
 
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="https://s3.amazonaws.com/ucanbe-production/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://ucanbe-production.s3.amazonaws.com/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://ucanbe-production.s3.amazonaws.com/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://ucanbe-production.s3.amazonaws.com/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://ucanbe-production.s3.amazonaws.com/images/apple-touch-icon-144x144.png">
 
+    
     <%= csrf_meta_tags %>
 
     <!--CSS and shim-->
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= render 'layouts/shim' %>
-
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= render 'layouts/shim' %> 
+    
 
     <!--GA --> 
     <script>

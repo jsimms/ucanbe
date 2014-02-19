@@ -1,15 +1,18 @@
 class StaticPagesController < ApplicationController
   
-  def landing
+  def index
   end
+
+  def faq
+  end 
+
+  def curriculum 
+  end  
 
   def about
   end
 
   def contact
-  end
-
-  def curriculum 
   end
 
   def privacy

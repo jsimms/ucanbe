@@ -17,14 +17,6 @@ test:
   pool: 5
   timeout: 5000
 
-staging:
-  adapter: postgresql
-  encoding: unicode
-  database: ucanbe_production
-  pool: 5
-  timeout: 5000
-
-
 production:
   adapter: postgresql
   encoding: unicode

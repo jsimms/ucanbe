@@ -1,9 +1,7 @@
 Ucanbe::Application.configure do
   
   # Make sure they know the magic words...
-  config.middleware.insert_after(::Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
-    [u, p] == ['staging', 'password']
-  end
+
 
   # Code is not reloaded between requests.
   config.cache_classes = true

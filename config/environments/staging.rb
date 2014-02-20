@@ -2,7 +2,7 @@ Ucanbe::Application.configure do
   
   # Make sure they know the magic words...
   config.middleware.insert_after(::Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
-    [u, p] == ['username', 'password']
+    [u, p] == [ENV['STAGING_USERNAME'], ENV['STAGING_PASSWORD']]
   end
 
   # Code is not reloaded between requests.

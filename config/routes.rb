@@ -7,9 +7,9 @@ Ucanbe::Application.routes.draw do
   get   "/privacy" => "static_pages#privacy" 
   get   "/terms" => "static_pages#terms"
 
+	match '/sitemap.xml.gz' => 'sitemaps#show', :via => [:get]
+
   post '/mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   
   mount Split::Dashboard, :at => 'split'
-
- 
 end

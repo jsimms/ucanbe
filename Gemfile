@@ -5,6 +5,10 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'pg', '0.15.1'
 
+gem "sitemap_generator", "~> 5.0.0"
+gem "excon", "~> 0.31.0"
+gem "fog", "~> 1.20.0"
+
 gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
 gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 gem 'font-awesome-sass'

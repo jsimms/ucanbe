@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://www.ucanbe.com"
+SitemapGenerator::Sitemap.default_host = "http://www.ucanbe.com"
 
 # Write this somewhere safe locally 
 SitemapGenerator::Sitemap.public_path = 'tmp/'

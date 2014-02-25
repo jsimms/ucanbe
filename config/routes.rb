@@ -7,7 +7,7 @@ Ucanbe::Application.routes.draw do
   get   "/privacy" => "static_pages#privacy" 
   get   "/terms" => "static_pages#terms"
 
-	match '/sitemap.xml.gz' => 'sitemaps#show', :via => [:get]
+	get '/sitemap.xml.gz' => 'sitemaps#show'
 
   post '/mcsubscribe/subscribe' => 'mcsubscribe#subscribe'
   
